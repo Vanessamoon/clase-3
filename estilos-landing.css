@@ -1,0 +1,53 @@
+/* Esto fue lo que les comenté de hacer un "reset" de los estilos,
+puesto que los diferentes navegadores tienen algunos por default.
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  /*'vh' es otra unidad de medida del ancho de pantalla.
+  Revisar el siguiente artículo para entender 
+  la diferencia entre poner 100vh y 100%
+  https://bitsofco.de/viewport-vs-percentage-units/
+  */
+  height: 100vh;
+  background-image: url(Foto.jpg);
+  background-size: cover;/*conteine crea mosaico */ 
+  background-position: center;
+  margin-bottom: 50px; /* Da el espacio entre la margen:
+  /* Revisar la guía completa que está en CSS Tricks:
+  
+  */
+  display: flex;/* Difou rompe el bloque  */
+  flex-direction: column; /*  rompe el bloque  */
+  justify-content: center;/* ccs tricks   */
+  align-items: center;
+  text-align: center;/*la posión de la  texto con respecto a la imagen     */
+}
+.fila1 { 
+display: flex;
+text-align: center;
+align-items:center;
+ }
+.columna{
+  flex: 20%;
+  border: solid 2px;
+}
+
+.fuente {
+    font-family: 'Cold Night for Alligators';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 65px;
+}
+/*Google.fonts https://transfonter.org/  
+*/
+img {width: 40%}
+
+h2, h3{
+  font-family: 'Gaegu', cursive;
+  font-size: 45px;
+}
